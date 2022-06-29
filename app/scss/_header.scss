@@ -1,0 +1,117 @@
+@import "./variables";
+
+
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bar {
+    @include flexCenter();
+    background-color: $textPrimary;
+
+    &__text {
+        color: $bg;
+        font-family: $secondFont;
+        text-align: center;
+        margin: 2px 0;
+        text-transform: uppercase
+    }
+}
+
+.header {
+    @include flexCenter();
+    height: 100px;
+    background-color: $bg;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $textPrimary;
+        width: 80%;
+
+        @media (min-width: 375px) {
+            justify-content: space-between;
+        }
+
+        &__logo {
+            height: 100px;
+
+            img {
+                height: 100px;
+                width: 200px;
+                object-fit: cover;
+            }
+        }
+
+        &__menu {
+            display: flex;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            &__nav {
+
+                &__list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    margin: 0;
+                    padding: 0;
+
+                    &__item {
+                        margin: 0 10px;
+
+                        a {
+                            display: inline-block;
+                            position: relative;
+                            font-family: $secondFont;
+                        }
+
+                        a:after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $textPrimary;
+                            transform-origin: bottom right;
+                            transition: transform 0.25s ease-out;
+                        }
+
+                        a:hover:after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &__shortcuts {
+            display: flex;
+            flex-direction: row;
+
+            &__button {
+                border: none;
+                background-color: $bg;
+                color: $textPrimary;
+
+                &__icon {
+                    font-size: 20px;
+                    transition: all .2s ease-in-out;
+                }
+
+                &__icon:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
