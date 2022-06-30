@@ -95,7 +95,8 @@ button, a {
     width: 100%; }
     @media (min-width: 375px) {
       .header__container {
-        justify-content: space-between; } }
+        justify-content: space-between;
+        width: 90%; } }
     .header__container__logo {
       height: 100px; }
       .header__container__logo img {
@@ -159,12 +160,67 @@ button, a {
 .categories {
   display: flex;
   justify-content: center;
-  width: 100%; }
+  width: 100%;
+  margin: 25px 0 0 0;
+  background: linear-gradient(180deg, #f7ebec 0%, #f7ebec 60%, white 100%); }
   .categories__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    width: 80%; }
+    align-items: center;
+    width: 90%; }
+    @media (min-width: 1024px) {
+      .categories__container {
+        flex-direction: row; } }
+    .categories__container__description {
+      display: flex;
+      flex-direction: column;
+      justify-items: center; }
+      @media (min-width: 1024px) {
+        .categories__container__description {
+          width: 40%; } }
+      .categories__container__description h2 {
+        font-size: 2.5rem;
+        color: #424651;
+        letter-spacing: 2.5px; }
+      .categories__container__description p {
+        margin: 10px 0 0 0;
+        color: #E15554;
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 1px; }
+    .categories__container__media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 25px 0 0 0; }
+      @media (min-width: 768px) {
+        .categories__container__media {
+          flex-direction: row; } }
+      @media (min-width: 1024px) {
+        .categories__container__media {
+          display: grid;
+          grid-template-columns: 1fr 1fr; } }
+      .categories__container__media__categoria {
+        width: 100%;
+        min-width: 300px;
+        max-width: 300px;
+        margin: 5px; }
+        .categories__container__media__categoria__text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: white;
+          color: black; }
+          .categories__container__media__categoria__text h2 {
+            font-size: 2.5rem; }
+        .categories__container__media__categoria__image img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .categories__container__media__categoria--perfume img {
+        max-height: 150px; }
 
 .testing {
   width: 71.42857%; }

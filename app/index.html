@@ -1,157 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>IPSUN</title>
-    <script
-      src="https://kit.fontawesome.com/67d942ee47.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--build:css css/styles.min.css-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/print.css" />
-    <!--endbuild-->
-  </head>
 
-  <body>
-    <div class="bar">
-      <p class="bar__text">
-        Frete grátis para toda Brasil em compras acima de R$ 250
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <title>IPSUN</title>
+  <script src="https://kit.fontawesome.com/67d942ee47.js" crossorigin="anonymous"></script>
+  <!--build:css css/styles.min.css-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/print.css" />
+  <!--endbuild-->
+</head>
+
+<body>
+  <div class="bar">
+    <p class="bar__text">
+      Frete grátis para toda Brasil em compras acima de R$ 250
+    </p>
+  </div>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__container__logo">
+        <img src="./images/logo/Logo-vnda-challenge.png" />
+      </div>
+      <div class="header__container__menu">
+        <nav class="header__container__menu__nav">
+          <ul class="header__container__menu__nav__list">
+            <li class="header__container__menu__nav__list__item">
+              <a>Produtos</a>
+            </li>
+            <li class="header__container__menu__nav__list__item">
+              <a>Marcas</a>
+            </li>
+            <li class="header__container__menu__nav__list__item">
+              <a>Maquiagens</a>
+            </li>
+            <li class="header__container__menu__nav__list__item">
+              <a>Perfumes</a>
+            </li>
+            <li class="header__container__menu__nav__list__item">
+              <a>Skincare</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__container__shortcuts">
+        <button class="header__container__shortcuts__button">
+          <i class="header__container__shortcuts__button__icon fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="header__container__shortcuts__button">
+          <i class="header__container__shortcuts__button__icon fa-solid fa-user"></i>
+        </button>
+        <button class="header__container__shortcuts__button">
+          <i class="header__container__shortcuts__button__icon fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
     </div>
-    <header class="header">
-      <div class="header__container">
-        <div class="header__container__logo">
-          <img src="./images/logo/Logo-vnda-challenge.png" />
+  </header>
+  <main>
+    <section class="swiper">
+      <div class="swiper-conteiner banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/banner/banner1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner/banner2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner/banner3.jpg" />
+          </div>
         </div>
-        <div class="header__container__menu">
-          <nav class="header__container__menu__nav">
-            <ul class="header__container__menu__nav__list">
-              <li class="header__container__menu__nav__list__item">
-                <a>Produtos</a>
-              </li>
-              <li class="header__container__menu__nav__list__item">
-                <a>Marcas</a>
-              </li>
-              <li class="header__container__menu__nav__list__item">
-                <a>Maquiagens</a>
-              </li>
-              <li class="header__container__menu__nav__list__item">
-                <a>Perfumes</a>
-              </li>
-              <li class="header__container__menu__nav__list__item">
-                <a>Skincare</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="swiper">
+      <div class="swiper-conteiner brands">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-slide--brands" src="./images/brands/avon.png" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide--brands" src="./images/brands/kylie.png" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide--brands" src="./images/brands/lancome.png" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide--brands" src="./images/brands/mac.png" />
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-slide--brands" src="./images/brands/mary-key.png" />
+          </div>
         </div>
-        <div class="header__container__shortcuts">
-          <button class="header__container__shortcuts__button">
-            <i
-              class="header__container__shortcuts__button__icon fa-solid fa-magnifying-glass"
-            ></i>
-          </button>
-          <button class="header__container__shortcuts__button">
-            <i
-              class="header__container__shortcuts__button__icon fa-solid fa-user"
-            ></i>
-          </button>
-          <button class="header__container__shortcuts__button">
-            <i
-              class="header__container__shortcuts__button__icon fa-solid fa-cart-shopping"
-            ></i>
-          </button>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="categories">
+      <div class="categories__container">
+        <div class="categories__container__description">
+          <h2>Aqui nós tratamos a vaidade como virtude.</h2>
+          <p>
+            A IPSUN cosméticos preza pela qualidade dos produtos oferecidos, e
+            por isso, montou uma equipe de especialistas para selecionar os
+            melhores cosméticos capazes de satisfazer as necessidades das mulheres que desejam ser reconhecidas pela sua beleza.
+          </p>
+          <p>
+            Nossa filosofia é que o ato de cuidar de si é um ato de amor próprio, e que nossa missão é contribuir para o bem-estar de todas as mulheres. 
+          </p>
+        </div>
+        <div class="categories__container__media">
+          <div class="categories__container__media__categoria categories__container__media__categoria--make">
+            <div class="categories__container__media__categoria__image">
+              <img src="./images/categories/makeup2.jpg" />
+            </div>
+            <div class="categories__container__media__categoria__text">
+              <h3>Maquiagem</h3>
+                <p>
+                  Aprecie nossas cores.
+                </p>
+            </div>
+          </div>
+          <div>
+          <div class=" categories__container__media__categoria categories__container__media__categoria--perfume">
+            <div class="categories__container__media__categoria__image">
+              <img src="./images/categories/perfume1.jpg" />
+            </div>
+            <div class="categories__container__media__categoria__text">
+              <h3>Perfumes</h3>
+              <p>
+                Abuse dos nossos cheirinhos.
+              </p>
+            </div>
+          </div>
+
+          <div class="categories__container__media__categoria">
+            <div class="categories__container__media__categoria__image categories__container__media__categoria--skin">
+              <img src="./images/categories/skincare.jpg" />
+            </div>
+            <div class="categories__container__media__categoria__text">
+              <h3>Skincare</h3>
+              <p>
+                Sinta na pele.
+              </p>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="swiper">
-        <div class="swiper-conteiner banner">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./images/banner/banner1.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/banner/banner2.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="./images/banner/banner3.jpg" />
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </section>
-      <section class="swiper">
-        <div class="swiper-conteiner brands">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                class="swiper-slide--brands"
-                src="./images/brands/avon.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-slide--brands"
-                src="./images/brands/kylie.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-slide--brands"
-                src="./images/brands/lancome.png"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img class="swiper-slide--brands" src="./images/brands/mac.png" />
-            </div>
-            <div class="swiper-slide">
-              <img
-                class="swiper-slide--brands"
-                src="./images/brands/mary-key.png"
-              />
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
-      <section class="categories">
-        <div class="categories__container">
-          <div class="categories__container__description">
-            <h2>Seleção de produtos da IPSUN.</h2>
-            <p>
-              A IPSON cosméticos preza pela qualidade dos produtos oferecidos, e
-              por isso, montou uma equipe de especialistas para selecionar os
-              melhores cosméticos para a mulher vaidosa. Nossos produtos são
-              dividos em 3 categorias: maquiagens, perfumes e skincare.
-            </p>
-          </div>
-          <div class="categories__container__media">
-            <div class="categories__container__media"></div>
-            <div class="categories__container__media"></div>
-            <div class="categories__container__media"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__menu"></div>
-      <div class="footer__contact"></div>
-      <div class="footer__social"></div>
-    </footer>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__menu"></div>
+    <div class="footer__contact"></div>
+    <div class="footer__social"></div>
+  </footer>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>
