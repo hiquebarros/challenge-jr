@@ -1,5 +1,4 @@
-@import "./variables";
-
+@import "./globals/variables";
 
 @mixin flexCenter() {
     display: flex;
@@ -16,7 +15,7 @@
         font-family: $secondFont;
         text-align: center;
         margin: 2px 0;
-        text-transform: uppercase
+        text-transform: uppercase;
     }
 }
 
@@ -30,7 +29,7 @@
         align-items: center;
         justify-content: center;
         color: $textPrimary;
-        width: 80%;
+        width: 100%;
 
         @media (min-width: 375px) {
             justify-content: space-between;
@@ -48,12 +47,19 @@
 
         &__menu {
             display: flex;
-
-            @media (max-width: 768px) {
+            justify-content: center;
+            width: 50%;
+       
+            
+            @media (max-width: 800px) {
                 display: none;
+            }
+            @media (min-width: 768px) {
+                width: 70%;
             }
 
             &__nav {
+                width: 100%;
 
                 &__list {
                     display: flex;
@@ -69,6 +75,9 @@
                             display: inline-block;
                             position: relative;
                             font-family: $secondFont;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            font-size: 18px;
                         }
 
                         a:after {
@@ -77,11 +86,12 @@
                             width: 100%;
                             transform: scaleX(0);
                             height: 2px;
-                            bottom: 0;
                             left: 0;
+                            bottom: 0;
                             background-color: $textPrimary;
                             transform-origin: bottom right;
                             transition: transform 0.25s ease-out;
+                            
                         }
 
                         a:hover:after {
