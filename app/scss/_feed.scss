@@ -1,0 +1,15 @@
+.feed{
+    display: flex;
+    justify-content: center;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        &__username{
+    
+        }
+    
+        &__content{
+    
+        }
+    }
+}

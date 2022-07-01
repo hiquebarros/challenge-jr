@@ -2,11 +2,13 @@
 @import "./globals/boilerplate";
 @import "./globals/variables";
 @import './_banner.scss';
-@import "./brands";
+@import "./_brands";
 @import "./_header.scss";
-@import "./product.scss";
-@import "./categories";
+@import "./_categories";
 @import "./test.scss";
+@import "./_kit.scss";
+@import "./_feed.scss";
+@import "./_footer.scss";
 
 .testing {
   width: percentage(5/7);
