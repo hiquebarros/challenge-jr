@@ -37,3 +37,13 @@ const swiperBanner = new Swiper(".banner", {
       },
   
     }});
+
+    const swiperKit = new Swiper(".kit", {
+      // Navigation arrows
+      
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    
+      });
