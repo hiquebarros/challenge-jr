@@ -33,7 +33,7 @@
 
         @media (min-width: 375px) {
             justify-content: space-between;
-            width: 90%;
+            padding: 0 10px;
         }
 
         &__logo {
@@ -46,17 +46,12 @@
             }
         }
 
+        
         &__menu {
-            display: flex;
-            justify-content: center;
-            width: 50%;
-       
-            
-            @media (max-width: 800px) {
-                display: none;
-            }
-            @media (min-width: 768px) {
-                width: 70%;
+            display: none;
+
+            @media (min-width: 900px) {
+                display: flex;
             }
 
             &__nav {
@@ -104,7 +99,37 @@
             }
         }
 
+        .header__container__menu.active{
+            @media (max-width: 900px){
+                display: flex;
+                position: absolute;
+                width: 100%;
+                top: 100px;
+                right: 0;
+                background-color: $bg;
+                height: calc(63vh - 100px);
+                z-index:1000;
+                padding-left: 55px;
+                align-items: center;
+            }
 
+            @media (max-width: 450px){
+                margin-top: 24px;
+            }
+        }
+
+        .header__container__menu__nav__list.active{
+            @media (max-width: 900px){
+            display: block;
+            }
+
+            .active{
+                margin: 40px 0;
+                width: 92%;
+            }
+        }
+
+        
         &__shortcuts {
             display: flex;
             flex-direction: row;
@@ -122,7 +147,14 @@
                 &__icon:hover {
                     transform: scale(1.2);
                 }
+
+                @media (min-width: 1024px){
+                    &--mobile{
+                        display: none;
+                    }
+                }
             }
+
         }
     }
 }
