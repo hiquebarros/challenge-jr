@@ -47,3 +47,19 @@ const swiperBanner = new Swiper(".banner", {
       },
     
       });
+
+
+      const btnMobile = document.querySelector(".header__container__shortcuts__button--mobile")
+
+      function toggleMenu() {
+        const nav = document.querySelector(".header__container__menu")
+        const list = document.querySelector(".header__container__menu__nav__list")
+        const item = document.querySelectorAll(".header__container__menu__nav__list__item")
+        nav.classList.toggle('active')
+        list.classList.toggle('active')
+        item.forEach(element => {
+          element.classList.toggle('active')
+        });
+      }
+
+      btnMobile.addEventListener('click', toggleMenu)
