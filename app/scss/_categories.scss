@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 25px 0 0 0;
-    background: rgb(247,235,236);
-    background: linear-gradient(180deg, rgba(247,235,236,1) 0%, rgba(247,235,236,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 50px 0 50px 0;
+    background: rgb(247, 235, 236);
+    background: linear-gradient(180deg, rgba(247, 235, 236, 1) 0%, rgba(247, 235, 236, 1) 0%, rgba(255, 255, 255, 1) 100%);
 
     &__container {
         display: flex;
@@ -55,12 +55,11 @@
             @media (min-width: 1024px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                gap: 15px;
             }
 
             &__categoria {
                 width: 100%;
-                min-width: 300px;
-                max-width: 300px;
                 margin: 5px;
 
                 &__text {
@@ -75,22 +74,38 @@
                     }
                 }
 
-                &__image {
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
 
-                    img {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                &__image--makeup {
+                    height: 375px;
+                }
+
+                &__image--perfume {
+                    height: 375px;
+                    @media (min-width: 1024px){
+                        height: 150px;
                     }
+                }
+
+                &__image--skin {
+                    height: 375px;
                 }
             }
 
-            &__categoria--make {}
+            &__categoria--make {
+                grid-row: span 2;
+            }
 
             &__categoria--perfume {
-                img {
-                    max-height: 150px;
+                @media (min-width: 1024px) {
+                    img {
+                        max-height: 150px;
+                    }
                 }
             }
         }

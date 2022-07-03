@@ -1,15 +1,31 @@
-.feed{
+.feed {
     display: flex;
     justify-content: center;
-    &__container{
+    margin: 50px 0 50px 0;
+
+    &__container {
         display: flex;
         flex-direction: column;
-        &__username{
-    
+        width: 100%;
+        padding: 20px;
+
+        &__username {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
         }
-    
-        &__content{
-    
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+
+            &__box {
+                background-color: azure;
+                height: 300px;
+                width: 300px;
+                margin: 0 20px;
+            }
         }
     }
 }
