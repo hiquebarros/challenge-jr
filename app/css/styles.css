@@ -85,9 +85,6 @@ button:active {
     text-align: center;
     margin: 2px 0;
     text-transform: uppercase; }
-    @media (min-width: 768px) {
-      .bar__text {
-        margin: 2px 0 0 5%; } }
 
 .header {
   display: flex;
@@ -106,17 +103,18 @@ button:active {
         justify-content: space-between;
         padding: 0 10px; } }
     .header__container__logo {
-      height: 100px; }
+      height: 100px;
+      width: 10rem; }
       .header__container__logo img {
         height: 100px;
-        width: 195px;
+        width: 100%;
         object-fit: cover; }
     .header__container__menu {
-      display: none;
-      margin: 0 1% 0 0; }
+      display: none; }
       @media (min-width: 900px) {
         .header__container__menu {
-          display: flex; } }
+          display: flex;
+          width: 60%; } }
       .header__container__menu__nav {
         width: 100%; }
         .header__container__menu__nav__list {
@@ -154,7 +152,7 @@ button:active {
         position: absolute;
         width: 100%;
         top: 100px;
-        right: -3px;
+        right: 0;
         background-color: #F7EBEC;
         height: calc(63vh - 100px);
         z-index: 1000;
@@ -171,7 +169,8 @@ button:active {
       width: 92%; }
     .header__container__shortcuts {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      width: 10rem; }
       .header__container__shortcuts__button {
         border: none;
         background-color: #F7EBEC;
@@ -215,7 +214,8 @@ button:active {
           max-width: none; } }
       @media (min-width: 1024px) {
         .categories__container__description {
-          width: 40%; } }
+          width: 40%;
+          padding: 0 2rem 0 0; } }
       .categories__container__description h2 {
         font-size: 2.5rem;
         color: #424651;
@@ -376,11 +376,11 @@ button:active {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      padding: 125px 0 50px 0; }
+      padding: 4rem 2rem; }
       .feed__container__content__box {
         width: 300px;
         height: 300px;
-        margin: 10px;
+        margin: 15px;
         background-color: bisque;
         position: relative;
         transition: transform ease-in-out 0.5s; }
