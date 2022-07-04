@@ -164,6 +164,7 @@
             }
             .--facebook, .--instagram{
                 transition: transform ease-in-out 0.5s;
+                cursor: pointer;
             }
             .--facebook:hover, .--instagram:hover{
                 transform:scale(1.1)

@@ -511,7 +511,8 @@ button:active {
         font-family: "PT Sans", sans-serif;
         transition: transform ease-in-out 0.5s; }
       .footer__container__social .--facebook, .footer__container__social .--instagram {
-        transition: transform ease-in-out 0.5s; }
+        transition: transform ease-in-out 0.5s;
+        cursor: pointer; }
       .footer__container__social .--facebook:hover, .footer__container__social .--instagram:hover {
         transform: scale(1.1); }
 
