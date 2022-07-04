@@ -59,7 +59,9 @@
                 @media (min-width: 1000px){
                     max-width: 245px
                 }
-                
+                span{
+                    font-family: $secondFont;
+                }
 
                 h2 {
                     font-size: $subHeadings;
@@ -80,7 +82,7 @@
                     border-radius: 5px;
                     padding: 5px;
                     width: 60%;
-                    height: 30px;
+                    height: 40px;
                 }
 
                 button:active{

@@ -318,6 +318,8 @@ button:active {
         @media (min-width: 1000px) {
           .kit__container__content__description {
             max-width: 245px; } }
+        .kit__container__content__description span {
+          font-family: "PT Sans", sans-serif; }
         .kit__container__content__description h2 {
           font-size: 2.5rem;
           color: #424651; }
@@ -333,7 +335,7 @@ button:active {
           border-radius: 5px;
           padding: 5px;
           width: 60%;
-          height: 30px; }
+          height: 40px; }
         .kit__container__content__description button:active {
           transform: scale(1.01); }
     .kit__container__swiper {
