@@ -85,9 +85,15 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     text-align: left;
+                    cursor: pointer;
 
                     li{
                         margin: 5px;
+                        transition: transform ease-in-out 0.5s;
+                    }
+
+                    li:hover{
+                        transform:scale(1.1)
                     }
                 }
             }
@@ -105,8 +111,8 @@
             &__send {
                 display: flex;
                 justify-content: flex-start;
-
-
+                
+                
                 input {
                     padding: 5px;
                     border: 0;
@@ -117,6 +123,11 @@
                     background: none;
                     font-family: $secondFont;
                     margin: 0 1px 0 0;
+                    transition: transform ease-in-out 0.5s;
+                }
+
+                input:focus{
+                    transform:scale(1.03)
                 }
 
                 input::placeholder {
@@ -149,6 +160,13 @@
                 display: flex;
                 flex-direction: column;
                 font-family: $secondFont;
+                transition: transform ease-in-out 0.5s;
+            }
+            .--facebook, .--instagram{
+                transition: transform ease-in-out 0.5s;
+            }
+            .--facebook:hover, .--instagram:hover{
+                transform:scale(1.1)
             }
         }
     }
