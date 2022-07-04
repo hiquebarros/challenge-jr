@@ -16,10 +16,6 @@
         text-align: center;
         margin: 2px 0;
         text-transform: uppercase;
-
-        @media (min-width: 768px){
-            margin: 2px 0 0 5%;
-        }
     }
 }
 
@@ -42,10 +38,11 @@
 
         &__logo {
             height: 100px;
+            width: 10rem;
 
             img {
                 height: 100px;
-                width: 195px;
+                width: 100%;
                 object-fit: cover;
             }
         }
@@ -53,10 +50,10 @@
         
         &__menu {
             display: none;
-            margin: 0 1% 0 0;
 
             @media (min-width: 900px) {
                 display: flex;
+                width: 60%;
             }
 
             &__nav {
@@ -110,7 +107,7 @@
                 position: absolute;
                 width: 100%;
                 top: 100px;
-                right: -3px;
+                right: 0;
                 background-color: $bg;
                 height: calc(63vh - 100px);
                 z-index:1000;
@@ -138,6 +135,7 @@
         &__shortcuts {
             display: flex;
             flex-direction: row;
+            width: 10rem;
 
             &__button {
                 border: none;
