@@ -47,7 +47,7 @@
             }
         }
 
-        
+
         &__menu {
             display: none;
 
@@ -89,7 +89,7 @@
                             background-color: $textPrimary;
                             transform-origin: bottom right;
                             transition: transform 0.25s ease-out;
-                            
+
                         }
 
                         a:hover:after {
@@ -101,37 +101,39 @@
             }
         }
 
-        .header__container__menu.active{
-            @media (max-width: 900px){
+        .header__container__menu.active {
+            @media (max-width: 900px) {
                 display: flex;
                 position: absolute;
                 width: 100%;
                 top: 100px;
                 right: 0;
-                background-color: $bg;
-                height: calc(63vh - 100px);
-                z-index:1000;
+                background-color: #F7EBEC;
+                height: calc(71vh - 100px);
+                z-index: 1000;
                 padding-left: 55px;
                 align-items: center;
             }
 
-            @media (max-width: 450px){
+            @media (max-width: 450px) {
                 margin-top: 24px;
             }
         }
 
-        .header__container__menu__nav__list.active{
-            @media (max-width: 900px){
-            display: block;
+        .header__container__menu__nav__list.active {
+            @media (max-width: 900px) {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
             }
 
-            .active{
+            .active {
                 margin: 40px 0;
                 width: 92%;
             }
         }
 
-        
+
         &__shortcuts {
             display: flex;
             flex-direction: row;
@@ -151,8 +153,8 @@
                     transform: scale(1.2);
                 }
 
-                @media (min-width: 900px){
-                    &--mobile{
+                @media (min-width: 900px) {
+                    &--mobile {
                         display: none;
                     }
                 }
