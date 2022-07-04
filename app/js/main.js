@@ -1,15 +1,15 @@
-const swiperBanner = new Swiper(".banner", {
-  // Navigation arrows
+//BANNER SWIPER
 
+const swiperBanner = new Swiper(".banner", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
 
-const swiperBrands = new Swiper(".brands", {
-  // Navigation arrows
+//BRANDS SWIPER
 
+const swiperBrands = new Swiper(".brands", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -37,9 +37,9 @@ const swiperBrands = new Swiper(".brands", {
   },
 });
 
-const swiperKit = new Swiper(".kit", {
-  // Navigation arrows
+//KIT SWIPER
 
+const swiperKit = new Swiper(".kit", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
