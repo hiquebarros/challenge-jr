@@ -37,12 +37,30 @@
                     display: block;
                     object-fit: cover;
                 }
+
+                div{
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: grey;
+                    width: 100%;
+                    color: $bg;
+                    font-size: 1.2rem;
+                    p{
+                        padding: 0 0 0 0.5rem;
+
+                    }
+                }
             }
 
 
             &__box:hover{
                 @media (min-width: 960px){
                     transform: translateY(-20%);
+                }
+
+                div{
+                    display: inline-block;
                 }
             }
         }

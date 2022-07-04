@@ -395,9 +395,21 @@ button:active {
           height: 100%;
           display: block;
           object-fit: cover; }
+        .feed__container__content__box div {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          background-color: grey;
+          width: 100%;
+          color: #F7EBEC;
+          font-size: 1.2rem; }
+          .feed__container__content__box div p {
+            padding: 0 0 0 0.5rem; }
       @media (min-width: 960px) {
         .feed__container__content__box:hover {
           transform: translateY(-20%); } }
+      .feed__container__content__box:hover div {
+        display: inline-block; }
 
 .footer {
   display: flex;
